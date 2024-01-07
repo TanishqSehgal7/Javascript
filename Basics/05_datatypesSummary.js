@@ -20,8 +20,5 @@ the type is associated with run time values and not with
 named variables/fields etc. While a statically typed language
 is one in which the the type of variable is known at compile
 time
-
-
-
 */
 
