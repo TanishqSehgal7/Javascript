@@ -51,3 +51,33 @@ let stringNumber = String(someNumber)
 console.log(typeof someNumber)
 console.log(typeof stringNumber)
 console.table([someNumber,stringNumber])
+
+
+//  Operations in JS --------------------------------------
+
+let value = 3
+let negValue = -value
+console.table([value,negValue])
+console.table([2+2, 2-2, 2*2, 2%2, 2/2, 2**3])
+
+let str1 = "Tanishq"
+let str2 = "Sehgal"
+let result = str1 + " " + str2
+console.table([str1, str2, result])
+
+// concatenating values of different datatype
+
+console.log("1" + 2) // 12
+console.log(1 + "2") // 12
+console.log("1" + 2 + 2) // 122
+console.log(1 + 2 + "2") // 32
+
+/* conversion happens on the basis of what type of value is
+encountered first, if a string is used first  then all
+the succeeding values are treated as string and if a number
+is used first then all the succeeding values are treated 
+as a number.*/
+
+console.log("3" + 4 * 5) // 320
+console.log("3" * 4 * 5) // 60
+console.log("3" + 4 + 5) // 60
