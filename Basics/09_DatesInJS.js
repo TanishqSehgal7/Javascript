@@ -77,8 +77,7 @@ let timeInMs = newDate.getTime()
 let convertedDate = new Date(timeInMs)
 console.log(`Converted Date from miliseconds: ${convertedDate}`)
 
-// convert miliseconds to datetime in a speific date format
-let convertedDate2 = newDate.
+// convert miliseconds to datetime in a speific date format -> TBD
 
 
 
