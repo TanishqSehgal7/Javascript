@@ -20,5 +20,13 @@ the type is associated with run time values and not with
 named variables/fields etc. While a statically typed language
 is one in which the the type of variable is known at compile
 time
+ 
+Statically typed language: datatypes of variables are checked
+at compile time and are not allowed to changed in runtime
+
+Dynamically typed language: datatypes of variables are
+checked in runtime and can be changed after execution
+as well
+
 */
 
