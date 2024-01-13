@@ -4,7 +4,7 @@
 // var c = 30
 
 let a = 300
-
+ 
 if(true){ // this is a block scope: used with conditionals, functions etc
     let a = 10
     const b = 20
