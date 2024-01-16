@@ -38,6 +38,7 @@ if(balance>500) console.log("Sufficient Balance"); // implicit scope
 
 
 // way to write multiple lines in if case without {} -> comma separated lines
+// not a good practice
 if(balance > 800) console.log("Enough Balance"),
 console.log("Sufficient balance"),
 console.log("Balance greater than 600")
