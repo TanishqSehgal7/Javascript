@@ -42,3 +42,32 @@ if(balance>500) console.log("Sufficient Balance"); // implicit scope
 if(balance > 800) console.log("Enough Balance"),
 console.log("Sufficient balance"),
 console.log("Balance greater than 600")
+
+
+if(balance < 500) {
+    console.log("Less than 500")
+} else if(balance<750) {
+    console.log("Less than 750")
+} else if(balance < 850) {
+    console.log("Less than 850")
+} else if(balance < 1200) {
+    console.log("Less than 1200")
+}
+
+
+const userLoggedIn = true
+const debitCard = true
+const orderQty = 1
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+
+if(userLoggedIn && debitCard && orderQty!=0) {
+    console.log("Allow user to pay")
+}
+
+if(userLoggedIn && debitCard && (loggedInFromGoogle || loggedInFromEmail)) {
+    console.log("Allow user to proceed")
+} else {
+    console.log("Ask user to login with google")
+}
