@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    
+</body>
+
+<script>
+
+    const div = document.createElement('div');
+    console.log(div)
+    div.className = "main"
+    div.id = Math.floor(Math.random()*10) + 1
+    div.setAttribute("title", "generated title") // directly sets the values onto the elements
+    // div.setAttribute("innerHTML", "My Heading")
+    div.style.backgroundColor = "Green" // first fetches the exiting values and then over-writes them
+    div.style.padding = "12px"
+    div.style.borderRadius = "8px"
+    const textNode = document.createTextNode("My Created Div")
+    // adding the text node to div
+    div.appendChild(textNode)
+    // attaching the created div to html page
+    document.body.appendChild(div)
+
+
+</script>
+
+</html>
