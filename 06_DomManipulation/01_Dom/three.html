@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+
+    <style>
+        body {
+            background: #212121;
+            color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+
+    <ul class="language">
+        <li>Javascript</li>
+        <li>Java</li>
+        <li>Kotlin</li>
+        <li>HTML/CSS</li>
+    </ul>
+</body>
+
+<script>
+
+    function addLanguage(langName) {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(listItem);
+    }
+
+    addLanguage("C++");
+    addLanguage("Javascript");
+    addLanguage("Python");
+
+    function addLangOptimized(langName) {
+        const listItem = document.createElement('li')
+        listItem.appendChild(
+            document.createTextNode(langName))
+        document.querySelector('.language').appendChild(listItem)
+    }
+
+    addLangOptimized("Ruby")
+    addLangOptimized("GoLang")
+
+    // Editing values
+    const secondLang = document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo" // works same as innerHTML
+    secondLang.replaceWith(newLi)
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>Typescript</li>"
+
+    // Removing Elements
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove(lastLang)
+
+</script>
+
+</html>
