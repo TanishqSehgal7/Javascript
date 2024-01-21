@@ -10,11 +10,15 @@
             color: #fff;
             padding: 15px;
         }
+        .day {
+            padding: 10px;
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body class="bg-black">
 
-    <div>
+    <!-- <div>
         <h1 id="title" class="heading">Dom Learning</h1>
         <h2 id="title" class="heading">Dom Learning</h1>
         <h3 id="title" class="heading">Dom Learning</h1>
@@ -31,9 +35,46 @@
             <li>Three</li>
         </ul>
 
+    </div> -->
+
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
     </div>
     
 </body>
+
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent)
+    console.log(parent.children)
+    console.log(parent.children[1])
+    console.log(parent.children[1].innerHTML)
+
+    // HTML Collection shoudld be converted using Array.from() to apply forEach on it
+
+    for(let i = 0; i<parent.children.length;i++) {
+        console.log(`${i+1} child of parent is: ${parent.children[i]}`)
+    }
+
+    parent.children[1].style.color = "orange"
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne)
+    console.log(dayOne.parentElement);
+
+    console.log(dayOne.nextElementSibling);
+    console.log("NODES: ",parent.childNodes);
+
+</script>
+
 </html>
 
 
