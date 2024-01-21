@@ -1,0 +1,43 @@
+body {
+    background: #212121;
+    color: #fff;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 400px;
+    align-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: aqua;
+    color: black;
+    font-size: xx-large;
+    padding: 30px;
+    border: solid white 3px;
+    border-radius: 8px ;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+#blue:hover {
+    background-color: rgb(55, 55, 247);
+}
+ #green:hover{
+    background-color: rgb(53, 150, 53);
+ } 
+ 
+ #yellow:hover {
+    background-color: rgb(199, 199, 8);
+ } 
+ 
+ #orange:hover {
+    background-color: rgb(184, 121, 6);
+ }
