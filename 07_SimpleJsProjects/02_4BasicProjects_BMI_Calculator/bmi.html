@@ -13,31 +13,23 @@
 
     <div class="container">
 
-        <div class="heightDiv">
-            <h5>Please enter Height in cm:</h5>
-            <input type="text" class="height">
-        </div>
-    
-        <div class="weightDiv">
-            <h5>Please enter weight in Kgs:</h5>
-            <input type="text" class="weight">
-        </div>
-    
-        <div class="calculateButton">
-            <input class="calculate" type="submit"></input>
-        </div>
-    
-        <div class="displayTextDiv">
-            <h4>BMI Weight Guide</h4>
-            <p>Under Weight = Less than 18.6</p>
-            <p>Normal Range = 18.6 to 24.9</p>
-            <p>Overweight = Greater than 24.9</p>
-        </div>
+        <form>
+            <p><label>Height in cms: </label><input type="text" id="height" /></p>
+            <p><label>Weight in Kgs: </label><input type="text" id="weight" /></p>
+            <button class="calculate" type="submit">SUBMIT</button>
+            <div id="results"></div>
+          </form>
+    </div>
 
+    <div class="displayTextDiv">
+        <h4>BMI Weight Guide</h4>
+        <p>Under Weight = Less than 18.6</p>
+        <p>Normal Range = 18.6 to 24.9</p>
+        <p>Overweight = Greater than 24.9</p>
     </div>
 
 </body>
 
-<script src="./bmi,js"></script> 
+<script src="./bmi.js"></script> 
 
 </html>
