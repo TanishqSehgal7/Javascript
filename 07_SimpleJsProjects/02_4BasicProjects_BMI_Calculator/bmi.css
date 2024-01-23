@@ -1,29 +1,28 @@
 body {
-    background-color: white;
-    font-weight: 900;
+    background-color: rgba(109, 205, 253, 0.6);
+    font-weight: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body>h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(0, 183, 255);;
+    color: rgb(2, 110, 153);;
     margin: 100px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: stretch;
+    align-items: flex-start;
     padding: 50px;
     margin: 100px;
-    background-color: rgba(146, 198, 224, 0.6);
+    background-color: white;
     border-radius: 20px;
-    -moz-box-shadow: 2px 4px 6px rgba(0,0,0,.8);
-    -webkit-box-shadow: 2px 4px 6px rgba(0,0,0,.8);
-    box-shadow: 2px 4px 6px rgba(0,0,0,.8);
-    background-image: linear-gradient(to left, rgba(255,0,0,0),rgb(139, 211, 235));
+    -moz-box-shadow: 8px 16px 24px rgb(88, 175, 223);
+    -webkit-box-shadow: 8px 16px 24pxrgb(88, 175, 223);
+    box-shadow: 8px 16px 24px rgb(88, 175, 223);
 }
 
 input {
@@ -34,6 +33,12 @@ input {
     z-index: 2;
 }
 
+input:focus {
+    border: solid 3px rgb(14, 137, 179);
+    scale: 1.1;
+    transition-duration: 500ms;
+    transition-property: scale;
+}
 
 
 .calculate {
@@ -47,8 +52,9 @@ input {
 }
 
 .calculate:hover {
-    border-radius: 10px;
     border: solid 3px rgb(20, 169, 219);
     z-index: 2;
-
+    scale: 1.1;
+    transition-duration: 500ms;
+    transition-property: scale;
 }
