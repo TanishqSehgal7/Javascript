@@ -1,0 +1,54 @@
+body {
+    background-color: white;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body>h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 183, 255);;
+    margin: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 100px;
+    background-color: rgba(146, 198, 224, 0.6);
+    border-radius: 20px;
+    -moz-box-shadow: 2px 4px 6px rgba(0,0,0,.8);
+    -webkit-box-shadow: 2px 4px 6px rgba(0,0,0,.8);
+    box-shadow: 2px 4px 6px rgba(0,0,0,.8);
+    background-image: linear-gradient(to left, rgba(255,0,0,0),rgb(139, 211, 235));
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    border: solid 2px rgb(39, 178, 224);
+    z-index: 2;
+}
+
+
+
+.calculate {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: solid 3px rgb(125, 194, 218);
+    background-color: white;
+    z-index: 2;
+    width: 100px;
+}
+
+.calculate:hover {
+    border-radius: 10px;
+    border: solid 3px rgb(20, 169, 219);
+    z-index: 2;
+
+}
