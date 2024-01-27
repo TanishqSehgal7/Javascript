@@ -137,3 +137,39 @@ liB.addEventListener('click', function(e) {
     e.stopPropagation()
 })
 
+// 
+liA.addEventListener('click', function(e) {
+    e.preventDefault(); 
+    /* prevents default action (like if a link is clicked, 
+        page would not be navigated to the href mentioned inside the link)
+    */
+    e.stopPropagation(); // stops event propagation
+    console.log("List item A clicked")
+},false)
+
+const myNewUl = document.querySelector("#myNewUl")
+myNewUl.addEventListener('click', function(e) {
+    console.log(e.target) // target gives the target element on which event happened
+    console.log(e.target.parentNode) // gives the parent element of the element on which event happened
+    console.log(e.target.parentNode.id)
+    e.preventDefault()
+    // removing elements on which event has happened
+    // let removeIt = e.target.parentNode // if this is used, whole list will be removed
+    // let removeIt = e.target
+    // removeIt.remove() -> 1 way to remove any element
+    // removeIt.remove()
+    // removeIt.parentNode.removeChild(removeIt) // removes the element received in removeIt variable
+
+    // if remove() is used without any check, it can remove the whole element as well
+    // so to tackle this we can use the tagName of the target element and then remove it
+
+    // only remove those elements who have <a></a> as their parent elements
+    if(e.target.parentNode.tagName === 'A') {
+        console.log(e.target.id)
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+        console.log(`Target is: ${e.target.parentNode}`)
+    }
+
+})
+
