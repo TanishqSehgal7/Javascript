@@ -1,18 +1,35 @@
-.body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:hsl(0, 0%, 13%); 
+    color:#ffff;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     align-self: center;
+    border-radius: 20px;
+    border: solid rgb(230, 134, 55) 3px;
+    margin: 100px;
+    padding: 50px;
 }
 
 .guessField {
-    padding: 10px;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.guessField:hover {
+    border: solid 3px rgb(230, 134, 55);
+} 
+
+.guessField:focus {
+    border: solid 3px rgb(230, 134, 55);;
+    scale: 1.1;
+    transition-duration: 500ms;
+    transition-property: scale;
 }
 
 #subt {
@@ -20,6 +37,15 @@
     padding: 5px;
 }
 
-form {
-    position: relative;
+#subt:hover {
+    border: solid rgb(230, 134, 55) 3px;
+    scale: 1.1;
+    transition-duration: 1000ms;
+    transition-property: scale;
+}
+
+.resultParas {
+    background-color: rgb(230, 134, 55);
+    padding: 10px;
+    border-radius: 10px;
 }

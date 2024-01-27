@@ -15,7 +15,7 @@ let playGame = true
 
 const newGameBtn = document.createElement('button')
 
-if(playGame) {
+if(playGame && guessCount<10) {
     submitBtn.addEventListener('click', function(e) {
         e.preventDefault()
         const guess = parseInt(numberInputBox.value)
@@ -40,8 +40,7 @@ function validateUserInput(guess) {
             prevGuesses.push(guess)
             displayAllPrevGuesses(prevGuesses)
             checkGuessValue(guess)
-        }
-        if(guessCount > totalGuesses) { // terminate the game and start a new one
+        } else if(totalGuesses - guessCount === 0) { // terminate the game and start a new one
             console.log(`GuessCount greater than total guesses: ${guessCount}`)
             displayMessage(`Game Over. Correct Value of Random Number was ${randomNumber}`)
             endGame() // end game and start new on button click
@@ -66,7 +65,7 @@ function displayAllPrevGuesses(prevGuesses) {
     prevGuesses.forEach(element => {
         guessList += (element + ", ")
     });
-    guessCount++
+    ++guessCount
     console.log(`GuessCount: ${guessCount}`)
     prevGuessesTextBox.innerHTML = guessList
     remainingGuessesTextBox.innerHTML = `${totalGuesses-guessCount}`
