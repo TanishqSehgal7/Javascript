@@ -1,0 +1,21 @@
+Javascript is a synchronous programming
+language by default.
+
+It is also a single threaded language by default which
+means everything works on  a single threaded by default.
+
+Above 2 points are true with reference to the default
+behavior of Javascript.
+
+Execution Context -> Execution of one line of code at a time.
+Each operation waits for the last one to complete before executing.
+
+There are 2 types of code that can be written: 
+
+1. Blocking Code: blocks the flow of entire program (File Read Sync)
+2. Non Blocking code: does not block the execution (File Read Async)
+
+
+
+
+
