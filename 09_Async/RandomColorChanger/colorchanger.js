@@ -15,9 +15,10 @@ function randomColorGenerator() {
 
 
 startBtn.addEventListener('click',function(){
+    document.querySelector("body").style.transition = "all 5s";
     const changeBg = setInterval(function(){
         randomColorGenerator()
-    },1000);
+    },5000);
 
     stopBtn.addEventListener('click',function(){
         clearInterval(changeBg)
