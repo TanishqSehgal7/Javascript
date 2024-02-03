@@ -1,7 +1,15 @@
 const xmlReq = new XMLHttpRequest()
 const api = "https://randomuser.me/api/" 
+xmlReq.open('GET',api) 
+/* xmlReq.open('GET',api) 
+-> tracks for only once 
 
-xmlReq.open('GET',api) //-> tracks for only once
+Failed to execute 'send' on 
+'XMLHttpRequest': The object's state must 
+be OPENED. This error is received if the 
+XMLHttpRequest is not opened using open 
+function
+*/
 
 xmlReq.onreadystatechange = function() { // tracks everytime the state changes
     console.log()
