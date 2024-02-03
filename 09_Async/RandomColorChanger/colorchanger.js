@@ -18,7 +18,7 @@ startBtn.addEventListener('click',function(){
     document.querySelector("body").style.transition = "all 5s";
     const changeBg = setInterval(function(){
         randomColorGenerator()
-    },5000);
+    },3000);
 
     stopBtn.addEventListener('click',function(){
         clearInterval(changeBg)
