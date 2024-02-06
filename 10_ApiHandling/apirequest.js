@@ -25,20 +25,25 @@ function
 xmlReq.onreadystatechange = function() { // tracks everytime the state changes
     console.log()
     console.log(xmlReq.readyState)
-    if(xmlReq.readyState === 4 )  {
+    if(xmlReq.readyState === 4)  {
         const data = JSON.parse(this.responseText) // this refers to current context/object in use
         console.log(typeof data)
         console.log(data)
         console.log(`Data: ${data}`)
         console.log(`Results[0].email: ${data.results[0].email}`)
         console.log(`Info.seed: ${data.info.seed}`)
+
         const resultsCheckPoint = data.results[0]
+
         name.innerHTML = `Name: ${resultsCheckPoint.name.title} ${resultsCheckPoint.name.first} ${resultsCheckPoint.name.last}`
         gender.innerHTML = `Gender: ${resultsCheckPoint.gender}`
+        
         let date = new Date(resultsCheckPoint.dob.date.toString())
         console.log(date)
         dobAge.innerHTML = `DOB: ${date.toLocaleString()} <br><br> <span>Age: ${resultsCheckPoint.dob.age}</span>`
+        
         email.innerHTML = `Email: ${resultsCheckPoint.email}`
+        
         loc.innerHTML = `
         Location: ${resultsCheckPoint.location.street.number},
         ${resultsCheckPoint.location.street.name},
@@ -48,6 +53,7 @@ xmlReq.onreadystatechange = function() { // tracks everytime the state changes
         ${resultsCheckPoint.location.postcode}
         `
         nationality.innerHTML = `Nationality: ${resultsCheckPoint.nat}`
+        
         contact.innerHTML = `Phone: ${resultsCheckPoint.phone} <br> 
         Cell: ${resultsCheckPoint.cell}`
 
@@ -55,6 +61,7 @@ xmlReq.onreadystatechange = function() { // tracks everytime the state changes
 
         username.innerHTML = `UserName: ${resultsCheckPoint.login.username}`
         pass.innerHTML = `Password: ${resultsCheckPoint.login.password}`
+        
         let registrationdt = new Date(resultsCheckPoint.registered.date)
         regdate.innerHTML = `Registration Date: ${registrationdt.toLocaleString()} 
         <br> Age: ${resultsCheckPoint.registered.age}`

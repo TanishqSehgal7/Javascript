@@ -60,7 +60,7 @@ h3 {
     }
     img{
         align-self: center;
-        height: auto;
-        width: auto;
+        height: 200px;
+        width: 200px;
     }
   }

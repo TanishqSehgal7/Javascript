@@ -1,0 +1,7 @@
+/*
+Promise object represents the eventual completion of faliure
+of an asynchronous operation and its resulting value.
+
+
+
+*/
