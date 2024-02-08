@@ -1,0 +1,3 @@
+# Javascript and Classes -> althrough classes were introductd in ECMAScript 2015 (ES6), but in general Javascrpt does not have classes.
+
+# Javascript is purely a prototype based language and its classes are primarily a syntactic sugar over existing prototype based inheritence mechanisms, ie. it provides more familiar syntax for developers coming from class based languages like Java, C++ but under hood it works differently.
